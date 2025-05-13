@@ -1,0 +1,10 @@
+pytest
+pytest-html
+sphinx
+sphinx-autodoc-typehints
+
+## conda equivalents
+# conda install anaconda::pytest
+# conda install conda-forge::pytest-html
+# conda install sphinx
+# conda install conda-forge::sphinx-autodoc-typehints
