@@ -38,4 +38,3 @@ The logger utility configuration is in [utils/logger.py](utils/logger.py)
 1. Wrap this project in a Docker container with alpine, python, and conda dependencies.
    1. Set up a conda local cache in the docker container to speed up the tests (currently ~1m each)
 2. Create instances of data classes using dicts to deserialize for known tests.
-3. Build a local Django based API webserver to simulate replacing BizTalk.

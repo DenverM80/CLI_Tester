@@ -1,4 +1,4 @@
-from logging import log
+from utils.logger import log
 import subprocess
 from typing import List, Tuple
 
@@ -18,7 +18,7 @@ class RunCmd:
         Returns:
             Tuple[str, str, int]: A tuple containing stdout, stderr, and the return_code
         """
-        log(f"Running [{' '.join(args)}]")
+        log.info(f"Running [{' '.join(args)}]")
         proc = subprocess.run(args=' '.join(args), text=True, shell=True, capture_output=True)
         return proc.stdout, proc.stderr, proc.returncode
 

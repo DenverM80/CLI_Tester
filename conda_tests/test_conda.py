@@ -63,7 +63,7 @@ def test_create_and_verify_python_env(environment_name: str, version: str, pkgs:
             None
     """
     # Create conda environment
-    output, errors, rc = conda_cli.create_python_env(env_name=environment_name, pkgs=[], version=version)
+    output, errors, rc = conda_cli.create_env(env_name=environment_name, pkgs=[], version=version)
     log.info(f"conda create env output:\n{output}")
     assert rc == 0, f"Failed to create {environment_name}: {errors}"
 
